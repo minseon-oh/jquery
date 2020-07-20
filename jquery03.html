@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/jquery-3.5.1.js"></script>
+
+</head>
+<body>
+    
+    <script>
+        // 자바스크립트
+        // window.onload = function(){
+        //     var btn = document.getElementById("btn");
+        //     btn.onclick = function(){
+        //         alert("실행");
+        //     }
+        // }
+
+        // 위 자바스크립트랑 완벽히 똑같은 제이쿼리
+        // $(window).load(function(){
+        // })
+
+        // 비슷한 제이쿼리 (더 유용하게 사용됨, 문서가 다 준비된 후에 실행되라.)
+        $(document).ready(function(){
+            // 자바스크립트 (혼용해서 사용하지 않는게 좋다.)
+            var btn = document.getElementById("btn");
+            btn.onclick = function(){
+                alert("실행");
+            }
+        })
+    </script>
+
+    <button type="button" id="btn">버튼테스트</button>
+
+</body>
+</html>
